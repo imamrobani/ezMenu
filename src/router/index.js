@@ -1,7 +1,12 @@
 import React from 'react'
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Home, SplashScreen } from '../screens'
+import {
+  SplashScreen,
+  Login,
+  Register,
+  Home
+} from '../screens'
 // import { BottomNavigator } from '../components'
 // import { createSharedElementStackNavigator } from 'react-navigation-shared-element'
 
@@ -54,6 +59,8 @@ const Router = () => {
       }}
     >
       <Stack.Screen name='SplashScreen' component={SplashScreen} />
+      <Stack.Screen name='Login' component={Login} />
+      <Stack.Screen name='Register' component={Register} />
       <Stack.Screen name='Home' component={Home} />
     </Stack.Navigator>
   )
