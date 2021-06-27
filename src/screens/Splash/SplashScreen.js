@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Logo } from '../../assets'
 import * as Animatable from 'react-native-animatable'
+import { Fonts } from '../../consts'
 
 const SplashScreen = ({ navigation }) => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const SplashScreen = ({ navigation }) => {
         duration={1500}
       >
         <Logo />
+        <View style={{ height: 8 }} />
         <Text style={styles.title}>ezMenu</Text>
       </Animatable.View>
     </View>
@@ -42,7 +44,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    color: '#020202'
+    color: '#020202',
+    fontFamily: Fonts.POPPINS_MEDIUM
   }
 })
 
