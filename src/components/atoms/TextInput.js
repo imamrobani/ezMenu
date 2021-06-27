@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TextInput as TextInputRN } from 'react-native'
-import { Fonts } from '../../consts'
+import { Colors, Fonts } from '../../consts'
 
 const TextInput = ({ label, placeholder, ...restProps }) => {
   return (
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#020202',
     borderRadius: 8,
-    padding: 10
+    padding: 10,
+    color: Colors.black
   }
 })
